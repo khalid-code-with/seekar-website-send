@@ -2,7 +2,62 @@ html
  { 
  scroll-behavior: smooth;   
  }
-/* for smooth scrolling on click navbar any item */
+
+
+.menu_bar {
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+  padding: 12px 20px;
+  background-color: white;
+}
+
+/* Logo Styling */
+
+.logo_fonia {
+  margin-right: 40px !important;
+}
+
+.logo_fonia img {
+  height: 50px;
+}
+
+/* Navbar Items */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Menu items ke beech spacing */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 17px;
+  color: #333 !important;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: white;
+}
+ /* in small devices start tha navbar item bottom of logo */
+@media (max-width: 991px) {
+  .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start; 
+      text-align: left;
+      gap: 1px !important;   
+  }
+  .nav-item {
+      padding: 8px 0;
+  }
+}
+.logo_fonia {
+      margin-right: 0;
+  }
+
 #navbar_sticky {
     position: fixed;  
     top: 0;
@@ -13,16 +68,15 @@ html
     padding: 10px 20px;
 }
 
-/* body  */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* transform: translate(0, 0) !important;/ */
+
 }
 
 #discount{
-    /* background-color: rgb(236, 105, 57); */
+    
     background-color: #2173f0 !important;
     padding:13px;
 }
@@ -38,11 +92,12 @@ body {
 }
 
 /* navbar contacts functionality or services and etc */
+
 .nav-item {
     font-weight: 600;
   }
   .nav-item .nav-link {
-    color: black !important;
+    color: #000 !important;
   }
   .nav-item .nav-link:hover {
     color: #227aff !important;
@@ -53,7 +108,7 @@ body {
     border: none !important;
     box-shadow: none !important;
     color: black;
-    font-weight: 600 !important;
+  
     padding: 2vh !important;
     background-color: white;
   }
@@ -62,7 +117,7 @@ body {
     box-shadow: none !important;
   }
   .dropdown-menu .dropdown-item {
-    color: black !important;
+    /* color: black !important; */
   }
   .dropdown-menu .dropdown-item:hover {
     color: #227aff !important;
@@ -105,17 +160,6 @@ body {
     background-color: black !important;
   }
   
- 
-  
-  /* Dropdown Arrow Direction */
-  .nav-item.dropdown .nav-link::after {
-    transition: transform 0.3s ease-in-out;
-  }
-  .nav-item.dropdown:hover .nav-link::after {
-    transform: rotate(180deg); 
-  }
-
-
   /* for navabar sticky on top this class is added */
   .sticky {
     position: fixed;
@@ -125,9 +169,7 @@ body {
     transition: top 0.4s ease-in-out; 
 }
 
-
 /* home part image with container */
-
 .container {
   margin-top:112px;
   display: flex;

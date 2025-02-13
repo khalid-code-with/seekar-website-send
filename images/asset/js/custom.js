@@ -9,7 +9,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-
 // move button on top scrolling
 // function scrollToTop() {
 //     window.scrollTo({ top: 0, behavior: 'smooth' });
