@@ -9,10 +9,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// move button on top scrolling
-// function scrollToTop() {
-//     window.scrollTo({ top: 0, behavior: 'smooth' });
-// }
 
     // this show the navbar always on top dont need to refresh
     document.addEventListener("click", function () {

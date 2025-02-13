@@ -3,24 +3,21 @@ html
  scroll-behavior: smooth;   
  }
 
-
 .menu_bar {
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
   padding: 12px 20px;
   background-color: white;
 }
-
 /* Logo Styling */
-
 .logo_fonia {
   margin-right: 40px !important;
 }
-
 .logo_fonia img {
   height: 50px;
 }
 
 /* Navbar Items */
+
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -35,14 +32,12 @@ html
   padding: 8px 15px;
   border-radius: 5px;
 }
-
-
-
 .navbar-nav .nav-link.active {
   font-weight: bold;
   color: white;
 }
  /* in small devices start tha navbar item bottom of logo */
+
 @media (max-width: 991px) {
   .navbar-nav {
       flex-direction: column;
@@ -68,19 +63,13 @@ html
     padding: 10px 20px;
 }
 
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-
-#discount{
-    
-    background-color: #2173f0 !important;
-    padding:13px;
-}
-
 /* icons on hover desing icons */
 .icon {
     color: white; /* Default icon color */
@@ -90,83 +79,29 @@ body {
     position: relative;
     right: 45px; /* Default for full screen */
 }
-
-/* navbar contacts functionality or services and etc */
-
-.nav-item {
-    font-weight: 600;
-  }
-  .nav-item .nav-link {
-    color: #000 !important;
-  }
   .nav-item .nav-link:hover {
     color: #227aff !important;
     background-color: #ffffff;
   }
-  .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    border: none !important;
-    box-shadow: none !important;
-    color: black;
-  
-    padding: 2vh !important;
-    background-color: white;
-  }
-  .dropdown-menu {
-    border: none !important;
-    box-shadow: none !important;
-  }
-  .dropdown-menu .dropdown-item {
-    /* color: black !important; */
-  }
-  .dropdown-menu .dropdown-item:hover {
-    color: #227aff !important;
-    background-color: #ECDFC9 !important;
-  }
-  
-  /* Search Input (Moved Left by 20px) */
-  .search-container {
-    margin-right: 20px; /* Right side se 20px left shift */
-  }
-  .search-input:focus {
-    box-shadow: none !important;
-    border-color: #ced4da !important;
-  }
-  input:hover {
-    background-color: #ced4da;
-  }
-  .search-input {
-    width: 80% !important;
-    border-radius: 5px 0 0 5px;
-    background-color: #dbdbdbf0;
-    outline: none;
-  }
-  /* navbara search icon  */
-  .search-btn {
-    border-radius: 0 5px 5px 0 !important;
-    background-color: #227aff !important;
-    padding:1.8vh !important;
-    border: 1px solid #dbdbdbf0 !important;
-    outline: none !important;
-    border: none !important;
-  }
-  @media (max-width: 1200px) {
-    .search-btn {
-      padding: 1.5vh !important;
-    }
-  }
-  
-  .search-btn:hover {
-    background-color: black !important;
-  }
-  
-  /* for navabar sticky on top this class is added */
-  .sticky {
+
+
+  /* .sticky {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    top: 0px;
-    transition: top 0.4s ease-in-out; 
+    top: 0px !important;
+    transition: top 0.3s ease-in-out !important;
+}  */
+
+
+/* navbar smoothly adjust on top  sticky on top */
+.menu_bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;  
+  background: white; 
+  transition: top 0.3s ease-in-out;
 }
 
 /* home part image with container */
