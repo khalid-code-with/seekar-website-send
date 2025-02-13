@@ -1,0 +1,644 @@
+
+/* hidden the icons and phone numbers for small devices */
+@media (max-width: 980px) {
+    .hidden_icons {
+      display: none !important;
+    }
+  }
+  
+  .icons{
+      color: white;
+      font-size:14px;
+  }
+  .icon:hover {
+      color: black;
+      transform: scale(1.2) !important; /* Icon ko thoda bada karega */
+      transition: transform 0.3s ease !important; /* Smooth transition effect */
+  }
+  
+  /* Full screen (1200px+) → Icons को 45px left shift करें */
+  @media (min-width: 1200px) {  
+      .icon {
+          position: relative;
+          right: 45px;
+      }
+  }
+  
+  /* Small screens (1199px और नीचे) → Position completely reset */
+  @media (max-width: 1199px) {
+      .icon {
+          position: static;
+      }
+  }
+  
+  
+  /* for header part media query */
+  @media (max-width: 100px) {
+    .reducewidth {
+        position: relative;
+        left: -5vh !important;
+        width: 10px !important;
+    }
+    .reducewidth{
+        position: relative;
+        left: -5vh !important;
+        width: 10px !important;
+    }
+    .reducewidthbutton{
+        position: relative;
+        left: -20vh !important;
+        /* width: 10px !important; */
+    }
+    .reducewidthimage{
+        position: relative;
+        left: -20vh !important;
+    }
+  }
+  
+@media(max-width:767px)
+{
+  .right-content p{
+    font-family:Arial, Helvetica, sans-serif ;
+  }
+}
+/* for search container */
+  @media (max-width: 992px) {
+    .search-container {
+      margin-right: 0;
+      width: 100%;
+      justify-content: center;
+    }
+    .search-input {
+      width: 80% !important;
+    }
+  }
+
+
+  /* define the header line by line for small devices using media query */
+@media (max-width: 968px) {
+    .text-section {
+        text-align: left; /* Left align content on small devices */
+    }
+    .reducewidthimage {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .discover_button {
+        display: inline-block;
+        margin-left: 0;
+    }
+  }
+  /* end */
+
+
+
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+  
+    .image-section {
+        order: -1; 
+        margin-top: -40px;
+    }
+  
+    .text-section,
+    .image-section {
+        width: 100%;
+    }
+  
+    .text-section h1 {
+        font-size: 2.2rem;
+        margin-top: 40px;
+    }
+  
+    .text-section p {
+        font-size: 1.1rem;
+        color: #000;
+        font-weight: 500;
+    }
+  
+    .discover_button {
+        display: inline-block;
+        padding: 12px 30px;
+        font-size: 1rem;
+        vertical-align: middle; /* ✅ Button & text ek level pe */
+    }
+  
+    /* ✅ Text & Button ko ek line me laane ke liye */
+    .text-button-wrapper {
+        display: flex;
+        align-items: center; /* ✅ Align text and button */
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px; /* ✅ Space between text & button */
+    }
+  
+    .image-section img {
+        max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .container {
+        flex-direction: column;  /* ✅ Sab kuch ek column me aayega */
+        align-items: center;
+        text-align: center;
+    }
+  
+    .text-section {
+        font-size: 5px !important;
+        text-align: center;
+        width: 100%;  /* ✅ Pura width le */
+    }
+  
+    .text-section p {
+        font-size:0.40rem !important;
+        text-align: center;
+    }
+  
+    .image-section img {
+        width: 50px !important;
+        display: block;
+        margin: 0 auto;  /* ✅ Center me aayega */
+    }
+  
+    .text-button-wrapper {
+        flex-direction: column;  /* ✅ Text aur button ek ke neeche ek aayenge */
+        gap: 5px;
+    }
+  
+    .discover_button {
+        font-size: 6px !important;
+        padding: 5px 10px !important;
+    }
+  }
+  /* end hone */
+
+
+  @media (max-width: 992px) {
+    .studio-section h1 {
+    font-size: 2.4rem !important; /* Reduce font size */
+    position: relative;
+    top: 45px;
+    padding-bottom: 3px !important;
+    }
+    .studio-section h3 {
+      position: relative;
+      top: 45px !important;
+    }
+
+    }
+    
+    /* Small Devices (Mobiles) */
+    @media (max-width: 576px) {
+    .studio-section h1 {
+    font-size: 33px !important; /* Smaller font for small screens */
+    word-break: break-word; /* Ensure long words break properly */
+    text-align: center; /* Center text for better visibility */
+    }
+    }
+
+    /* Make sure the cards don't overflow */
+@media (max-width: 768px) {
+    .testimonial .row {
+      justify-content: center; /* Center align the cards */
+    }
+  
+    .testimonial .col-lg-4 {
+      max-width: 100%; /* Allow the card to occupy full width on smaller screens */
+    }
+  
+    .testimonial .col-md-6 {
+      max-width: 100%;
+    }
+  
+    .testimonial .col-sm-12 {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .text-start {
+        text-align: left !important; /* Ensures the text remains left-aligned */
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+    }
+}
+
+
+/* reduce the size of image and text of cart */
+@media(max-width:100px)
+{
+ .reduce_size{
+    font-size: 4px !important;
+   position: relative;
+   left: -2vh !important;
+ }
+}
+/* end */
+
+
+
+/* Small devices ke liye top 0 karne ke liye */
+@media (max-width: 768px) {  
+    .changebutton_topbutton {
+        top: -5px !important;
+    }
+    .latest-products h2 {
+        top: 0 !important;
+    }
+}
+
+/* add the space on top for small device */
+@media (max-width: 900px) {
+    #move_center{
+        position: relative !important;
+        top: 10px !important;
+    }
+}
+/* end */
+
+@media (max-width: 1150px) {
+    .card-custom img {
+        position: static; /* Resets the position property */
+        left: 0 !important; /* Removes any left shift */
+        margin-top: 0 !important; /* Removes the margin-top */
+    }
+}
+/* start all image icons  from start */
+.align-start {
+    display: block;
+    margin-left: 0;
+    color: #FFFFFF;
+  }
+  
+  @media(max-width:900px)
+  {
+      .text-width{
+        width: 270px !important;
+      }
+  }
+
+
+  @media(max-width:968px)
+  {
+      .card-custom .move-left{
+      width: 280px;
+      color: #FFFFFF;
+      font-weight: 450;
+      }
+      .move-leftside{
+         color: #FFFFFF;
+      }
+  }
+  .align-start{
+      text-align: left !important;
+       font-weight: 450;
+  }
+  /* end */
+
+
+/* Small Devices */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5rem !important; /* Reduce size for tablets */
+        text-align: left; /* Ensure left alignment */
+        width: 100% !important;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Reduce size for mobiles */
+        text-align: left;
+        padding: 0 10px; /* Add some padding */
+    }
+}
+
+
+/* Small Devices */
+@media (max-width: 768px) {
+    .hero-content p {
+        font-size: 1rem;  
+        margin-bottom: 1rem;
+        text-align: left; /* Ensure left alignment */
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .hero-content p {
+        font-size:0.9rem !important;  
+        padding: 0 10px;
+        text-align: left;
+    }
+}
+
+
+
+/* Small Devices (Tablets & Below) */
+@media (max-width: 768px) {
+    .hero-content .btn {
+        display: block;  
+        width: fit-content; 
+        padding: 18px 40px !important;
+        margin: 0 auto 10px 0 !important; 
+        font-weight: bold !important;
+        text-align: left !important;
+        font-size:11px !important;
+        border-radius: 3px !important;
+        margin-left:0px !important;
+    }
+}
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 480px) {
+    .hero-content .btn {
+        padding: 20px 45px; /* Aur thoda padding bada diya */
+    }
+}
+
+
+/* for footer media query add  */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-section {
+      height: 60vh;
+      padding-left: 5%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .hero-section {
+      height: 60vh;
+      padding-left: 5%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 930px) {
+    .hero-section {
+      height: 60vh;
+      padding-left:5%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      max-width: 80%;
+      justify-content:initial ;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 50vh;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .hero-content .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      height: 40vh;
+      padding-left: 3%;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.8rem;
+    }
+  }
+  
+   @media (max-width: 972px) {
+    .hero-section {
+        height: 80vh; /* Full height for this resolution */
+        padding: 0;
+        justify-content: flex-start; /* Keep the content at the start */
+        align-items: flex-end; /* Push content to the bottom */
+        background-position: center bottom;
+    }
+
+    .hero-content {
+        max-width: 80%; /* Adjust width to fit smaller screens */
+        bottom: 5%; /* Keep content 5% away from the bottom */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Adjust heading size */
+        margin-left: -20px !important;
+    }
+
+    .hero-content p {
+        line-height: 1.4rem;
+        margin-left: -20px;
+        width: 300px;
+    }
+
+    .hero-content .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin-left: -10px !important;
+        position: relative;
+        top: 7px !important;
+    }
+}
+@media(max-width: 540px)
+{
+    .hero-section {
+        height: 50vh;
+        padding-left: 3%;
+      }
+    
+      .hero-content h1 {
+        font-size: 1.4rem;
+      }
+    
+      .hero-content p {
+        font-size: 0.6rem;
+      }
+      .hero-content .btn {
+        padding: 8px 18px;
+        font-size: 0.6rem;
+    }
+}
+
+@media(max-width: 390px)
+{
+    .hero-content{
+        padding: 0px;
+    }
+    .hero-section {
+        height: 30vh;
+        padding-left: 3%;
+      }
+    
+      .hero-content h1 {
+        font-size: 0.6rem;
+        margin-bottom: 3px;
+      }
+    
+      .hero-content p {
+        font-size: 0.4rem;
+        margin-bottom: 5px;
+
+      }
+      .hero-content .btn {
+        padding: 6px 15px;
+        font-size: 0.5rem;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-center {
+        margin-top: 20px; /* Keeps the newsletter centered and aligned properly */
+    }
+
+    .newsletter-form {
+        flex-direction: column; /* Stack the input and button vertically */
+        width: 100%; /* Full width */
+        max-width: 300px; /* Maintain max width */
+        margin: auto;
+    }
+
+    .newsletter-form input
+    {
+        width:500px !important; /* Both input and button take full width */
+        margin-bottom: 10px; /* Ensure space between input and button */
+        padding: 1.50vh !important;
+        border-radius: 2px;
+    }
+    .newsletter-form button{
+        padding: 10px !important;
+        width: 500px !important;
+        border-radius: 2px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+  /* newletter move to right side */
+.move_rights_side_center {
+    position: relative;
+    left: 12vh !important;
+    margin-top: 7vh !important; /* Margin on larger screens */
+}
+
+/* Remove margin-top and reset the position for screens smaller than 900px */
+@media (max-width: 1000px) {
+    .move_rights_side_center {
+        position: static; /* Resets the position property */
+        left: 0 !important; /* Removes any left shift */
+        margin-top: 0 !important; /* Removes the margin-top */
+    }
+}
+
+/* end footer part css */
+
+/* end build your career */
+
+
+
+/* end footer media query */
+
+
+/*  Small Devices ke liye Responsive Infinite Scroll */
+@media (max-width: 768px) {
+    .logo-slider-desktop {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 40px; /* Increased gap for better spacing on small devices */
+      flex-wrap: nowrap;
+      overflow: hidden;
+      padding: 10px;
+      width: 100%; /* Ensure it stays inside */
+    }
+    
+    .logo-row img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    /* ✅ Duplicate logos for smooth infinite effect */
+    .logo-row::after {
+      content: "";
+      display: flex;
+      width: 100%; /* Ensures full width */
+    }
+    
+    /* ✅ Upper Row Animation (Left to Right) */
+    .logo-row:first-child {
+      animation: moveLeft 20s linear infinite;
+    }
+    
+    /* ✅ Lower Row Animation (Right to Left) */
+    .logo-row:last-child {
+      animation: moveRight 20s linear infinite;
+    }
+    
+    /* ✅ Keyframes for Smooth Infinite Scrolling */
+    @keyframes moveLeft {
+      0% { transform: translateX(100%); } /* Start from right side */
+      100% { transform: translateX(-90%); } /* Move to left */
+    }
+    
+    @keyframes moveRight {
+      0% { transform: translateX(-100%); } /* Start from left side */
+      100% { transform: translateX(70%); } /* Move to right */
+    }
+    }  
+    /* end logoes on top of company */

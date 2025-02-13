@@ -1,0 +1,128 @@
+/* @keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .reducewidth {
+    animation: slideInFromLeft 1s ease-out;
+  }
+  
+  .reducewidthbutton {
+    animation: slideInFromLeft 1s ease-out;
+  }
+  .studio-section h3{
+    animation: slideInFromLeft 1s ease-out;
+  }
+  .studio-section h1{
+    animation: slideInFromLeft 1s ease-out;
+  }
+  .hero-content h1{
+    animation: slideInFromLeft 1s ease-out;
+  }
+  .hero-content p{
+    animation: slideInFromLeft 1s ease-out;
+  }
+  .hero-content a{
+    animation: slideInFromLeft 1s ease-out;
+  }
+
+
+  
+  @keyframes slideFromTop {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+ .animationallytop{
+    animation: slideFromTop 1s ease-out forwards;
+ }
+    .reducewidthimage {
+        animation: slideFromTop 1s ease-out forwards;
+    }
+
+
+  @keyframes slideFromTop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.moveontop .card {
+    opacity: 0;
+    animation: slideFromTop 1s ease-out forwards;
+}
+
+.moveontop .col-md-3:nth-child(1) .card {
+    animation-delay: 0.2s;
+}
+
+.moveontop .col-md-3:nth-child(2) .card {
+    animation-delay: 0.4s;
+}
+
+.moveontop .col-md-3:nth-child(3) .card {
+    animation-delay: 0.6s;
+}
+
+.moveontop .col-md-3:nth-child(4) .card {
+    animation-delay: 0.8s;
+}
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+#moveontopside .col-lg-4 {
+    opacity: 0;
+    animation: slideFromTop 1s ease-out forwards;
+}
+
+
+#moveontopside .col-lg-4:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#moveontopside .col-lg-4:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+#moveontopside .col-lg-4:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+@keyframes slideInFromRight {
+    from { 
+        transform: translateX(100%);
+        opacity: 0; 
+    }
+    to { 
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+.paragraph-content {
+    opacity: 0; 
+    animation: slideInFromRight 1s ease-out forwards;
+} */
+
+/* enimation css end here finished */

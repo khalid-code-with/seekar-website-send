@@ -1,0 +1,558 @@
+.latest-products {
+    margin: 0 auto;
+    max-width: 80%; 
+    padding: 30px 0 32px;
+    position: relative;
+    top:30px !important;
+  
+}
+
+.latest-products h2 {
+    position: relative;
+    top: 30px !important;
+    font-size: 48px;
+    margin-bottom:5px;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  
+    
+}
+
+.product-content {
+    font-size: 2rem;
+    color: #555;
+ /* Centering the content */
+}
+.changebutton_topbutton {
+    position: relative;
+    top: 30px !important;
+    background-color: #DC3545 !important;
+    padding: 2vh !important;
+    width: 200px;  /* Width badhane ke liye */
+    height: 60px;  /* Height badhane ke liye */
+    outline: none !important;
+    border: none !important;
+    font-size: 1.1rem !important;
+}
+
+.changebutton_topbutton:hover{
+background-color: #000 !important;
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures everything inside is centered */
+    text-align: center; /* Aligns text inside */
+}
+
+.card-body h5 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card_headingss{
+    font-size: 14px !important;
+    line-height: 1.1rem ;
+    max-width: 400px !important;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    color: #333;
+
+    font-weight: bolder !important;
+}
+.card-body p {
+    font-size: 18px;
+    color: #E65127;
+    /* text-align: center; */
+    margin-top: 5px;
+    margin-bottom: 2px;
+
+}
+
+.card-body a {
+    margin-top: 10px; /* Add space between text and button */
+}
+.card-text del{
+    color:#555;
+}
+
+
+/* Container Background */
+.downtobotton{
+    position: relative;
+    top: 70px !important;
+}
+.why-choose-container {
+    background-color: #000;
+    padding-top: 50px !important;
+    padding-bottom: 50px;
+}
+
+/* "Why Choose Us" Heading */
+.why-choose {
+    color: #E65127;
+    font-size: 1.2rem;
+    padding: 2vh;
+}
+#move_center:hover{
+background-color:  #1a5ed9 !important
+}
+@media(max-width:1186px)
+{
+    #industry_driven{
+        width: 300px !important;
+    }
+}
+@media(max-width:100px)
+{
+    #industry_driven{
+        width: 100px !important;
+    }
+}
+
+/* all button color */
+.changebutton_color{
+    background-color: #DC3545 !important;
+    border: none !important;
+    outline: none !important;
+  }
+  .changebutton_color:hover{
+    background-color: #DC3545  !important;
+
+  }
+/* end all button color */
+/* Paragraph and Heading */
+.why-choose-container h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    writing-mode: inherit;
+    word-wrap: inherit;
+}
+
+.para {
+    color: white;
+    font-size: 1rem;
+    padding: 2.3vh !important;
+}
+/* .my-2{
+    padding: 1.9vh;
+} */
+ @media(max-width:768px)
+ {
+    .my-2
+    {
+        margin-top:10px !important;
+       
+    }
+   
+ }
+
+/* Custom Card Styles */
+.card-custom {
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.card-custom img{
+    font-size: 2rem;
+    color: #E65127;
+    position: relative;
+    left: 8vh;
+}
+
+
+
+/* move the text in a center in a proper alignment and center */
+.leftsidemoving{
+    margin-left: -10px !important;
+}
+.leftsidemovingdiamend{
+    margin-left: -5px !important;
+}
+
+
+/* footer part css start here */
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Left Section */
+.footer-left {
+    text-align: left;
+}
+
+.logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-left: 5px !important;
+}
+
+.social-icons a {
+    position: relative;
+    top: 13px !important;
+    color: white;
+    font-size: 15px;
+    margin: 20px 10px !important;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #227Aff !important;
+}
+
+/* Center Newsletter Section */
+.footer-center {
+    text-align: center;
+    flex: 1;
+    margin-top: 20px; /* Newsletter thoda neeche kiya */
+}
+
+.footer-center h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.footer-center p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    gap: 0; 
+    flex-direction: row; /* Ensure input and button stay in a row */
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.newsletter-form input {
+    padding: 10.5px !important;
+    width: 70%; /* Increase input width */
+    max-width:200px; /* Max width for input */
+    border: none;
+    border-radius: 5px 0 0 5px; /* Left side rounded, right side straight */
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 9px 20px;
+    border: none !important;
+    outline:  none !important;
+    background-color:#227Aff;
+    color: white;
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer;
+    font-weight: 600 !important;
+    width: 30%; /* Reduce button width */
+    max-width: 120px; 
+}
+.newsletter-form button:hover{
+    background-color: #1a5ed9 !important;
+    color: #FFFFFF;
+    font-weight: 600 !important;
+}
+
+/* image css buld your career */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 79vh !important;
+    background: url('images/asset/bussinessman.jpg') no-repeat top center/cover; /* Changed alignment to bottom */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 7%; /* Reduced padding for a balanced look */
+  }
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(69, 68, 68, 0.4); /* Increased overlay opacity slightly */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    color: white;
+    z-index: 2; /* Ensure content is above the overlay */
+    animation: slide-in 1s ease-out;
+    text-align: left;
+  }
+  
+
+  .hero-content h1 {
+    font-size: 3.4rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    width: 100%; /* Full width le lega */
+    word-wrap: break-word; /* Ensure long words break */
+    white-space: normal; /* Proper text wrapping */
+}
+
+
+.hover_icon:hover{
+  margin: 1px !important ;
+  background-color: rebeccapurple !important;
+}
+
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: 100%;  /* Ensure full width */
+    word-wrap: break-word;  /* Break long words */
+    white-space: normal; /* Ensure text wraps properly */
+}
+
+
+
+  
+  /* Default Button Styles (No Change) */
+.hero-content .btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #227aff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: 4px;
+    outline: none !important;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.hero-content .btn:hover{
+    background-color: black !important;
+}
+
+
+/* this is remove the bydefault hover on icons */
+   .no-hover{
+  pointer-events: none !important;
+} 
+  
+  
+
+
+/* Right Section */
+.footer-right {
+    text-align: right;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links li a:hover {
+    color: #227Aff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top:3rem;
+    color: #6c757d !important; 
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-bottom img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* add to cart css start here */
+.card {
+    border-radius: 12px; /* Card ke corners smooth */
+    overflow: hidden; 
+    text-align: center;
+    border-radius: 6px !important;
+   
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card .price {
+    margin-bottom: 5px; /* Price aur image ka gap kam */
+}
+
+.add-to-cart-btn {
+    width: 100%; /* Full width */
+    background-color: orange; /* Default color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+    background-color: black; /* Hover per black */
+}
+.add-to-cart-card{
+    border-radius: 12vh !important; /* Industry-standard rounded corners */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 17px !important;
+    box-sizing: border-box;
+    position: relative !important; 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    
+}
+/* Hover Effect */
+.add-to-cart-card:hover {
+    transform: translateY(0.10px) !important;  
+     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3) !important; 
+}
+
+.add-to-cart-card .stroke {
+    text-decoration: line-through;
+    color: #5C707E;
+    font-size: 15px;
+    padding: 10px !important;
+  
+}
+
+.add-to-cart-card .btn-primary {
+    width: 100%; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    gap: 8px;
+    font-size: 16px;
+    padding: 11px 15px;
+    outline: none !important;
+    border: none !important;
+    /* background-color: #0555fa !important; */
+    background-color: #227Aff !important;
+}
+.add-to-cart-card .btn-primary:hover{
+        background-color: #1a5ed9 !important;
+    }
+
+.add-to-cart-card .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.add-to-cart-card .card-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-to-cart-card .card-text {
+    font-size: 16px;
+    font-weight: bold; 
+    color: #00BBAE !important;
+    position: relative;
+    top: -0.80vh !important;
+}
+
+.add-to-cart-card img.card-img-top {
+    border-radius: 10px;
+}
+
+/* Fixing Star Image Spacing */
+.add-to-cart-card img[alt="Stars"] {
+    margin-top: 10px;  
+}
+
+.imge_top{
+    position: relative;
+    top:-0.60vh !important;
+}
+@media (max-width: 900px) { 
+    .add-to-cart-card {
+        margin-top: -2.20rem !important; 
+    }
+}
+
+.sticky-heading {
+    position: sticky;
+    top: 10vh;
+    background: white;
+    color: #227aff;
+    padding-top: 10px;
+    margin-bottom: 20px; 
+}
+@media(max-width:968px)
+{
+    .sticky-heading{
+        position: relative;
+        margin-top: 10px !important; 
+        margin-bottom: 30px !important; 
+        top: 1vh !important;
+        /* color: #227aff; */
+    }
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reduce_gap_three_onfullscreen{
+    position: relative;
+    top: -5vh;
+}
+@media (max-width: 900px) {
+    .reduce_gap_three_onfullscreen {
+        position: static;
+        top: auto; 
+    }
+}
+
+/* end add to cart css */
