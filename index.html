@@ -4,6 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/elementkit-icons/css/elementkit-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>Market inova website</title>
     <link rel="stylesheet" href="style.css">
@@ -45,7 +46,13 @@
         <img src="images/asset/headerimage.png" class="img-fluid d-block mx-auto reducewidthimage"data-aos="fade-down"width="100px" alt="Font Logo">
     </div>
 </div>
+<!-- whatsapp added in right side mai -->
 
+<div class="add-whatsapp">
+    <a href="https://wa.me/919929970449?text=Hi" target="_blank" class="whatsapp-btn">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>
   <!-- cart part start here  -->
   <div class="container-fluid" id="categoery">
     <h1 class="course-heading text-start" data-aos="fade-right">Our Courses Categories</h1>
@@ -99,7 +106,7 @@
     <div class="row align-items-center">
        
         <div class="col-12 col-md-6">
-            <h3 data-aos="fade-right" class="aos-init">About Our Pedestal </h3>
+            <h3 data-aos="fade-right" class="aos-init">About Our Pedestal</h3>
             <h1 data-aos="fade-right" class="aos-init">Bridging Education & Industry Excellence.</h1>
         </div>
        
@@ -111,10 +118,8 @@
     </div>
     </div>
 </div>
-
-
 <div class="container latest-products"id="courses">
-    <h2>Latest Courses</h2>
+    <h2 class="latest">Latest Courses</h2>
     <div class="d-flex justify-content-end">
       <a href="https://pedestaltechnoworld.com/courses">
         <button type="button" class="btn btn-danger topbutton" id="move_center" onclick="scrollToTop()">View More</button>
@@ -329,9 +334,188 @@
     </div>
 </div>
 
+<!-- <style>
+ 
+    .gallery-heading {
+        text-align: start;
+        margin-bottom: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #0056b3;
+        letter-spacing: 1px;
+        border-bottom: 3px solid #0056b3;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .gallery-card {
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        background: #ffffff;
+        border: none;
+        height: 100%;
+    }
 
+    .gallery-card img {
+        height: 305px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .gallery-card .card-body {
+        padding: 20px;
+        text-align: center;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .gallery-card:hover {
+        transform: scale(1.08);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+    }
+
+    .gallery-card .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        transition: color 0.3s;
+    }
+
+    .gallery-card .btn {
+        background-color: #0056b3;
+        border: none;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .gallery-card .btn:hover {
+        background-color: #003d80;
+    }
+
+  
+    @media (max-width: 768px) {
+        .gallery-card img {
+            height: 250px;
+        }
+    }
+</style>
+
+<div class="container-fluid my-5">
+    <h1 class="gallery-heading">Our Developer Gallery</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card gallery-card">
+                <img src="images/asset/gellary.png" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">Expert in Web Development & UI/UX.</p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-card">
+                <img src="images/asset/gellary.png" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Full Stack Developer & Backend Specialist.</p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-card">
+                <img src="images/asset/gellary.png" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Lee</h5>
+                    <p class="card-text">Master in Mobile & Cloud Technologies.</p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- here start our gellary -->
+<div class="container-fluid my-2">
+    <h1 class="gallery-heading">Career Achievements Showcase</h1>
+    <div class="row g-4"> 
+        <div class="col-md-4">
+            <div class="card gallery-card"id="redius1">
+                <img src="images/asset/gellry_image1.jpg" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">Alumni Success Gallery
+                    </p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-card"id="redius2">
+                <img src="images/asset/gellery4.jpg" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Alumni Success Gallery
+                    </p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-card"id="redius3">
+                <img src="images/asset/gellery3.jpg" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Lee</h5>
+                    <p class="card-text">Alumni Success Gallery
+                    </p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row of Cards -->
+    <div class="row g-4 mt-3">
+        <div class="col-md-4">
+            <div class="card gallery-card"id="redius4">
+                <img src="images/asset/gellery5.jpg" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">Emma Watson</h5>
+                    <p class="card-text">Alumni Success Gallery
+                    </p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-card"id="redius5">
+                <img src="images/asset/gellary2.jpg" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">David Brown</h5>
+                    <p class="card-text">Alumni Success Gallery
+                        .</p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card gallery-card"id="redius6">
+                <img src="images/asset/gellary6.jpg" class="card-img-top" alt="Developer">
+                <div class="card-body">
+                    <h5 class="card-title">Sophia Wilson</h5>
+                    <p class="card-text">Alumni Success Gallery
+                    </p>
+                    <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end gellary -->
 <!-- video banner -->
-<div class="banner">
+<div class="banner mt-5">
     <div class="left-content">
       <div class="play-button aos-init" data-aos="fade-up" onclick="openVideo()">
         <span>▶</span>
@@ -392,8 +576,6 @@
         </div>
     </div>
 </div>
-
-
   <!-- testimonial website -->
     <!-- Testimonial Section -->
     <div class="container-fluid testimonial"id="reviews">
@@ -576,7 +758,7 @@
     </div>
 </footer>
 <script>
-</script>
+</>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   <script src="images/asset/js/custom.js"></script>

@@ -17,6 +17,12 @@
     
 }
 
+@media (max-width: 768px) {
+    .latest{
+        font-size:2.7rem !important;
+    } 
+}
+
 .product-content {
     font-size: 2rem;
     color: #555;

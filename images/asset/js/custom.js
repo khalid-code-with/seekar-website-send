@@ -9,7 +9,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-
     // this show the navbar always on top dont need to refresh
     document.addEventListener("click", function () {
       document.getElementById("navbarSupportedContent").classList.add("show");
@@ -64,3 +63,27 @@ window.addEventListener("scroll", function () {
       });
 
 
+  // provide the circule on hover as gellery card
+    document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".gallery-card");
+
+    cards.forEach((card) => {
+        const circle = document.createElement("div");
+        circle.classList.add("hover-circle");
+        card.appendChild(circle);
+
+        card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            circle.style.transform = `translate(${x - 50}px, ${y - 50}px) scale(1)`;
+            circle.style.opacity = "1";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            circle.style.transform = "scale(0)";
+            circle.style.opacity = "0";
+        });
+    });
+});
