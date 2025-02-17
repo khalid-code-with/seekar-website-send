@@ -76,7 +76,6 @@ window.addEventListener("scroll", function () {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-
             circle.style.transform = `translate(${x - 50}px, ${y - 50}px) scale(1)`;
             circle.style.opacity = "1";
         });
@@ -86,4 +85,32 @@ window.addEventListener("scroll", function () {
             circle.style.opacity = "0";
         });
     });
+});
+
+
+
+ // arrow option going user on top when the user click on arrow
+let scrollTopbtn = document.getElementById("scrollTopBtn");
+window.onscroll = function () {
+    let scrollValue = window.scrollY; //check how much scrolling page
+
+    if (scrollValue > 300) { 
+        scrollTopbtn.style.opacity = "1"; 
+        scrollTopbtn.style.visibility = "visible";
+    } else {
+        scrollTopbtn.style.opacity = "0";  
+        scrollTopbtn.style.visibility = "hidden";
+    }
+};
+//when user click on the btn user going on top
+scrollTopBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+
+// Fast loading of all images on our website.
+window.addEventListener("load", () => {
+  document.querySelectorAll("img").forEach(img => {
+    new Image().src = img.src;
+  });
 });
