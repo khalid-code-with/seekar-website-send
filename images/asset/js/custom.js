@@ -64,28 +64,25 @@ window.addEventListener("scroll", function () {
 
 
   // provide the circule on hover as gellery card
-    document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".gallery-card");
-
-    cards.forEach((card) => {
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".gallery-card").forEach((card) => {
         const circle = document.createElement("div");
-        circle.classList.add("hover-circle");
+        circle.className = "hover-circle";
         card.appendChild(circle);
 
-        card.addEventListener("mousemove", (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            circle.style.transform = `translate(${x - 50}px, ${y - 50}px) scale(1)`;
+        card.onmousemove = (e) => {
+            let { left, top } = card.getBoundingClientRect();
+            circle.style.transform = `translate(${e.clientX - left - 50}px, ${e.clientY - top - 50}px) scale(1)`;
             circle.style.opacity = "1";
-        });
+        };
 
-        card.addEventListener("mouseleave", () => {
-            circle.style.transform = "scale(0)";
+        card.onmouseleave = () => {
             circle.style.opacity = "0";
-        });
+            circle.style.transform = "scale(0)";
+        };
     });
 });
+
 
 
 

@@ -9,12 +9,22 @@
 
 .latest-products h2 {
     position: relative;
-    top: 30px !important;
+    left: -13vh;
+    top:13vh !important;
     font-size: 48px;
     margin-bottom:5px;
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-  
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: #000;
     
+}
+/* remove the left and right side position for small devices */
+@media (max-width: 768px) {
+    .latest-products h2 {
+        position: static; 
+        left: auto;  
+        top: auto; 
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -38,6 +48,20 @@
     outline: none !important;
     border: none !important;
     font-size: 1.1rem !important;
+}
+
+/* apply hover on course categoery card */
+.hoverapplycart {
+    box-shadow: none;  
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+    will-change: box-shadow, transform; 
+}
+
+/* Apply shadow on hover with subtle scale effect */
+.hoverapplycart:hover {
+    background-color: #FFFFFFFF !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);  
+    transform: translateY(-5px);
 }
 
 .changebutton_topbutton:hover{
@@ -105,6 +129,21 @@ background-color: #000 !important;
     color: #E65127;
     font-size: 1.2rem;
     padding: 2vh;
+}
+#move_center{
+    position: relative;
+    top: 13vh !important;
+    right: -13vh;
+    font-weight: 600;
+}
+/* remove the left and right side position for small devices */
+@media (max-width: 768px) {
+    #move_center {
+        position: static; 
+        right: auto;  
+        top: auto;   
+      
+    }
 }
 #move_center:hover{
 background-color:  #1a5ed9 !important
